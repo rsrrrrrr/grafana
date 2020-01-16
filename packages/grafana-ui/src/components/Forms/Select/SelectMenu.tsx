@@ -24,8 +24,6 @@ export const SelectMenu = React.forwardRef<HTMLDivElement, React.PropsWithChildr
   );
 });
 
-SelectMenu.displayName = 'SelectMenu';
-
 interface SelectMenuOptionProps<T> {
   isDisabled: boolean;
   isFocused: boolean;

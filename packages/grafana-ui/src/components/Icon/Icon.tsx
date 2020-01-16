@@ -29,5 +29,3 @@ export const Icon: React.FC<IconProps> = ({ name, className, onClick, onMouseDow
   const styles = getIconStyles();
   return <i className={cx(styles.icon, 'fa', `fa-${name}`, className)} onClick={onClick} onMouseDown={onMouseDown} />;
 };
-
-Icon.displayName = 'Icon';

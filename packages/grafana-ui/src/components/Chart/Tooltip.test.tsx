@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import { Tooltip } from './Tooltip';
+import { ChartTooltip } from './Tooltip';
 
 // Tooltip container has padding of 8px, let's assume target tooltip has measured width & height of 100px
 const content = <div style={{ width: '84px', height: '84' }} />;
@@ -18,7 +18,7 @@ describe('Chart Tooltip', () => {
 
     // Jest's default viewport size is 1024x768px
     test('when fits into the viewport', () => {
-      const tooltip = mount(<Tooltip content={content} position={{ x: 0, y: 0 }} />);
+      const tooltip = mount(<ChartTooltip content={content} position={{ x: 0, y: 0 }} />);
       const container = tooltip.find('TooltipContainer > div');
       const styleAttribute = container.getDOMNode().getAttribute('style');
 
@@ -32,7 +32,7 @@ describe('Chart Tooltip', () => {
     });
 
     test("when overflows viewport's x axis", () => {
-      const tooltip = mount(<Tooltip content={content} position={{ x: 1000, y: 0 }} />);
+      const tooltip = mount(<ChartTooltip content={content} position={{ x: 1000, y: 0 }} />);
       const container = tooltip.find('TooltipContainer > div');
       const styleAttribute = container.getDOMNode().getAttribute('style');
 
@@ -47,7 +47,7 @@ describe('Chart Tooltip', () => {
     });
 
     test("when overflows viewport's y axis", () => {
-      const tooltip = mount(<Tooltip content={content} position={{ x: 0, y: 700 }} />);
+      const tooltip = mount(<ChartTooltip content={content} position={{ x: 0, y: 700 }} />);
       const container = tooltip.find('TooltipContainer > div');
       const styleAttribute = container.getDOMNode().getAttribute('style');
 
@@ -62,7 +62,7 @@ describe('Chart Tooltip', () => {
     });
 
     test("when overflows viewport's x and y axes", () => {
-      const tooltip = mount(<Tooltip content={content} position={{ x: 1000, y: 700 }} />);
+      const tooltip = mount(<ChartTooltip content={content} position={{ x: 1000, y: 700 }} />);
       const container = tooltip.find('TooltipContainer > div');
       const styleAttribute = container.getDOMNode().getAttribute('style');
 
@@ -78,7 +78,9 @@ describe('Chart Tooltip', () => {
 
     describe('when offset provided', () => {
       test("when overflows viewport's x and y axes", () => {
-        const tooltip = mount(<Tooltip content={content} position={{ x: 1000, y: 700 }} offset={{ x: 10, y: 10 }} />);
+        const tooltip = mount(
+          <ChartTooltip content={content} position={{ x: 1000, y: 700 }} offset={{ x: 10, y: 10 }} />
+        );
         const container = tooltip.find('TooltipContainer > div');
         const styleAttribute = container.getDOMNode().getAttribute('style');
 

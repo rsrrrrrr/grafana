@@ -119,5 +119,3 @@ export const GraphLegend: React.FunctionComponent<GraphLegendProps> = ({
     />
   );
 };
-
-GraphLegend.displayName = 'GraphLegend';

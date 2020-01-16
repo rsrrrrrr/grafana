@@ -40,5 +40,3 @@ export const SingleModeGraphTooltip: React.FC<GraphTooltipContentProps> = ({ dim
     />
   );
 };
-
-SingleModeGraphTooltip.displayName = 'SingleModeGraphTooltip';

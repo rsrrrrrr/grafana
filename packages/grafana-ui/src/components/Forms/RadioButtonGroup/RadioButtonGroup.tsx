@@ -53,5 +53,3 @@ export function RadioButtonGroup<T>({
     </div>
   );
 }
-
-RadioButtonGroup.displayName = 'RadioButtonGroup';

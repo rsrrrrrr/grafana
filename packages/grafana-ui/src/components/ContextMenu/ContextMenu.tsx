@@ -274,4 +274,3 @@ const ContextMenuGroup: React.FC<ContextMenuGroupProps> = ({ group, onClick }) =
     </div>
   );
 };
-ContextMenu.displayName = 'ContextMenu';

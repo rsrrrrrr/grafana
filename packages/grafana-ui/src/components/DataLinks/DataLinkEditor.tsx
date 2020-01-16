@@ -82,5 +82,3 @@ export const DataLinkEditor: React.FC<DataLinkEditorProps> = React.memo(
     );
   }
 );
-
-DataLinkEditor.displayName = 'DataLinkEditor';

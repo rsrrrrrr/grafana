@@ -162,4 +162,3 @@ class UnThemedLogRows extends PureComponent<Props, State> {
 }
 
 export const LogRows = withTheme(UnThemedLogRows);
-LogRows.displayName = 'LogsRows';

@@ -80,5 +80,3 @@ export const LogLabelStatsRow: FunctionComponent<Props> = ({ active, count, prop
     </div>
   );
 };
-
-LogLabelStatsRow.displayName = 'LogLabelStatsRow';

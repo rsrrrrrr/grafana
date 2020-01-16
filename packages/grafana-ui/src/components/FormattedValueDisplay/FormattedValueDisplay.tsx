@@ -33,5 +33,3 @@ export const FormattedValueDisplay: FC<Props> = ({ value, className, style }) =>
     </div>
   );
 };
-
-FormattedValueDisplay.displayName = 'FormattedDisplayValue';

@@ -38,5 +38,3 @@ export const MultiModeGraphTooltip: React.FC<GraphTooltipContentProps & {
 
   return <SeriesTable series={series} timestamp={timestamp} />;
 };
-
-MultiModeGraphTooltip.displayName = 'MultiModeGraphTooltip';

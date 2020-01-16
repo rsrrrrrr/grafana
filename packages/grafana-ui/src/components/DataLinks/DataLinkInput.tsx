@@ -170,5 +170,3 @@ export const DataLinkInput: React.FC<DataLinkInputProps> = memo(
     );
   }
 );
-
-DataLinkInput.displayName = 'DataLinkInput';

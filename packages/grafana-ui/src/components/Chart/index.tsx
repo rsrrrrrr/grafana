@@ -1,7 +1,7 @@
-import { Tooltip } from './Tooltip';
+import { ChartTooltip } from './Tooltip';
 
 const Chart = {
-  Tooltip,
+  Tooltip: ChartTooltip,
 };
 
 export default Chart;

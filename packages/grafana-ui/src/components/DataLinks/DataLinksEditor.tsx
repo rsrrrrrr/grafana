@@ -79,5 +79,3 @@ export const DataLinksEditor: FC<DataLinksEditorProps> = React.memo(({ value, on
     </>
   );
 });
-
-DataLinksEditor.displayName = 'DataLinksEditor';

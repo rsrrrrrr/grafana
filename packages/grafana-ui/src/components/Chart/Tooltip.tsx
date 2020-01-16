@@ -45,7 +45,7 @@ export interface TooltipProps {
   mode?: TooltipMode;
 }
 
-export const Tooltip: React.FC<TooltipProps> = ({ content, position, offset }) => {
+export const ChartTooltip: React.FC<TooltipProps> = ({ content, position, offset }) => {
   if (position) {
     return (
       <Portal
@@ -66,5 +66,3 @@ export const Tooltip: React.FC<TooltipProps> = ({ content, position, offset }) =
   }
   return null;
 };
-
-Tooltip.displayName = 'ChartTooltip';

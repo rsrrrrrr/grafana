@@ -40,8 +40,6 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>((props, r
   );
 });
 
-Button.displayName = 'Button';
-
 type LinkButtonProps = CommonProps &
   AnchorHTMLAttributes<HTMLAnchorElement> & {
     // We allow disabled here even though it is not standard for a link. We use it as a selector to style it as
@@ -67,4 +65,3 @@ export const LinkButton = React.forwardRef<HTMLAnchorElement, LinkButtonProps>((
     </a>
   );
 });
-LinkButton.displayName = 'LinkButton';

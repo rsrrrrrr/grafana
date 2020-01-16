@@ -159,4 +159,3 @@ class UnThemedConfirmButton extends PureComponent<Props, State> {
 }
 
 export const ConfirmButton = withTheme(UnThemedConfirmButton);
-ConfirmButton.displayName = 'ConfirmButton';

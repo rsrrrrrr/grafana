@@ -222,4 +222,3 @@ class UnThemedLogDetails extends PureComponent<Props> {
 }
 
 export const LogDetails = withTheme(UnThemedLogDetails);
-LogDetails.displayName = 'LogDetails';

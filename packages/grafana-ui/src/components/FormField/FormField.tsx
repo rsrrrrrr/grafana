@@ -41,5 +41,4 @@ export const FormField: FunctionComponent<Props> = ({
   );
 };
 
-FormField.displayName = 'FormField';
 FormField.defaultProps = defaultProps;

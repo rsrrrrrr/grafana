@@ -15,7 +15,6 @@ let ThemeContextMock: React.Context<GrafanaTheme> | null = null;
 
 // Use Grafana Dark theme by default
 export const ThemeContext = React.createContext(getTheme(GrafanaThemeType.Dark));
-ThemeContext.displayName = 'ThemeContext';
 
 export const withTheme = <P extends Themeable, S extends {} = {}>(Component: React.ComponentType<P>) => {
   const WithTheme: React.FunctionComponent<Subtract<P, Themeable>> = props => {
@@ -28,7 +27,6 @@ export const withTheme = <P extends Themeable, S extends {} = {}>(Component: Rea
     return <ContextComponent.Consumer>{theme => <Component {...props} theme={theme} />}</ContextComponent.Consumer>;
   };
 
-  WithTheme.displayName = `WithTheme(${Component.displayName})`;
   hoistNonReactStatics(WithTheme, Component);
   type Hoisted = typeof WithTheme & S;
   return WithTheme as Hoisted;

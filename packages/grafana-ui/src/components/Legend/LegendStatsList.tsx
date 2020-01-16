@@ -16,13 +16,9 @@ const LegendItemStat: React.FunctionComponent<{ stat: DisplayValue }> = ({ stat 
   );
 };
 
-LegendItemStat.displayName = 'LegendItemStat';
-
 export const LegendStatsList: React.FunctionComponent<{ stats: DisplayValue[] }> = ({ stats }) => {
   if (stats.length === 0) {
     return null;
   }
   return <InlineList items={stats} renderItem={stat => <LegendItemStat stat={stat} />} />;
 };
-
-LegendStatsList.displayName = 'LegendStatsList';

@@ -185,5 +185,3 @@ export const RadioButton: React.FC<RadioButtonProps> = ({
     </button>
   );
 };
-
-RadioButton.displayName = 'RadioButton';

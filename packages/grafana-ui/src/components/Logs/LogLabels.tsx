@@ -73,4 +73,3 @@ export const UnThemedLogLabels: FunctionComponent<Props> = ({ labels, theme }) =
 };
 
 export const LogLabels = withTheme(UnThemedLogLabels);
-LogLabels.displayName = 'LogLabels';

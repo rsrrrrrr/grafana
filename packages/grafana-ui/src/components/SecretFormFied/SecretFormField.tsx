@@ -68,4 +68,3 @@ export const SecretFormField: FunctionComponent<Props> = ({
 };
 
 SecretFormField.defaultProps = defaultProps;
-SecretFormField.displayName = 'SecretFormField';

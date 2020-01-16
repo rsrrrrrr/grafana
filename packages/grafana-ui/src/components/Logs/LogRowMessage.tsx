@@ -139,4 +139,3 @@ class UnThemedLogRowMessage extends PureComponent<Props, State> {
 }
 
 export const LogRowMessage = withTheme(UnThemedLogRowMessage);
-LogRowMessage.displayName = 'LogRowMessage';

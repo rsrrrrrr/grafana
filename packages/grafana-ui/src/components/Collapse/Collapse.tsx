@@ -122,5 +122,3 @@ export const Collapse: FunctionComponent<Props> = ({ isOpen, label, loading, col
     </div>
   );
 };
-
-Collapse.displayName = 'Collapse';

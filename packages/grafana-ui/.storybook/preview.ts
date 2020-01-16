@@ -14,7 +14,7 @@ import { withPaddedStory } from '../src/utils/storybook/withPaddedStory';
 import lightTheme from '../../../public/sass/grafana.light.scss';
 // @ts-ignore
 import darkTheme from '../../../public/sass/grafana.dark.scss';
-import { configure, addDecorator, addParameters } from '@storybook/react';
+import { addDecorator, addParameters } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 
 const handleThemeChange = (theme: any) => {
@@ -32,6 +32,7 @@ addDecorator(withKnobs);
 addDecorator(withPaddedStory);
 
 addParameters({
+  info: {},
   options: {
     showPanel: true,
     panelPosition: 'bottom',
@@ -44,6 +45,3 @@ addParameters({
     escapeHTML: false,
   },
 });
-
-// @ts-ignore
-configure(require.context('../src', true, /\.story\.(js|jsx|ts|tsx|mdx)$/), module);

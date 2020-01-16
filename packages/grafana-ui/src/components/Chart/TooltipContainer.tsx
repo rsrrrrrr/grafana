@@ -75,5 +75,3 @@ export const TooltipContainer: React.FC<TooltipContainerProps> = ({ position, of
     </div>
   );
 };
-
-TooltipContainer.displayName = 'TooltipContainer';

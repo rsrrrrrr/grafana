@@ -57,5 +57,3 @@ export const LegendList: React.FunctionComponent<LegendComponentProps> = ({
     <List items={items} renderItem={renderItem} getItemKey={getItemKey} className={className} />
   );
 };
-
-LegendList.displayName = 'LegendList';

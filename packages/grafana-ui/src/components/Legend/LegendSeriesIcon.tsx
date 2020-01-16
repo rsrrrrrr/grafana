@@ -57,5 +57,3 @@ export const LegendSeriesIcon: React.FunctionComponent<LegendSeriesIconProps> = 
     </SeriesColorPicker>
   );
 };
-
-LegendSeriesIcon.displayName = 'LegendSeriesIcon';

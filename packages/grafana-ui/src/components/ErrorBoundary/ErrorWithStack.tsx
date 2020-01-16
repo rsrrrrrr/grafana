@@ -24,5 +24,3 @@ export const ErrorWithStack: FunctionComponent<Props> = ({ error, errorInfo, tit
     </details>
   </div>
 );
-
-ErrorWithStack.displayName = 'ErrorWithStack';

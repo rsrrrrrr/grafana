@@ -24,5 +24,3 @@ export const GraphTooltip: React.FC<TooltipContentProps<GraphDimensions>> = ({
     return <MultiModeGraphTooltip dimensions={dimensions} activeDimensions={activeDimensions} pos={pos} />;
   }
 };
-
-GraphTooltip.displayName = 'GraphTooltip';

@@ -125,5 +125,3 @@ export const Checkbox: React.FC<CheckboxProps> = ({
     </label>
   );
 };
-
-Checkbox.displayName = 'Checkbox';
